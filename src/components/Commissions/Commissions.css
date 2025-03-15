@@ -1,7 +1,9 @@
 
+
 .labels-inputs{
     /*background: linear-gradient(rgb(126, 155, 155), rgb(245, 245, 220));*/
     margin-top: 20px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
