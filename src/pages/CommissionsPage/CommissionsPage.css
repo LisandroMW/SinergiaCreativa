@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Color de fondo general */
+}
+
+h1 {
+    margin: 0; /* Sin margen para los títulos */
+}
+
+.commissions-page-container{
+    display: flex;
+    flex-direction: column;
+}

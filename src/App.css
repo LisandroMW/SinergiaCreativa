@@ -1,4 +1,59 @@
-body{
-    height: 100vh;
-    background: linear-gradient(rgb(126, 155, 155), rgb(245, 245, 220))
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Color de fondo general */
+}
+
+h1 {
+    margin: 0; /* Sin margen para los títulos */
+}
+
+.app-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Estilos generales para el slider */
+.slick-dots {
+    bottom: 20px; /* Ajusta la posición de los puntos en pantallas pequeñas */
+    background-color: rgb(245, 245, 220);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+/* Puntos de navegación */
+.slick-dots li button {
+    width: 10px; /* Ancho del punto */
+    height: 10px; /* Altura del punto */
+    border: none; /* Sin borde */
+    border-radius: 50%; /* Redondeado */
+    background-color: rgba(255, 255, 255, 0.6); /* Color de fondo */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.slick-dots li.slick-active button {
+/*    background-color: rgb(126, 155, 155);  Color del punto activo */
+    color: rgb(23, 73, 75);
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+    .slick-dots {
+        bottom: 15px; /* Ajusta la posición en pantallas pequeñas */
+    }
+    
+    .slick-dots li button {
+        width: 8px; /* Cambia el tamaño de los puntos */
+        height: 8px;
+    }
 }

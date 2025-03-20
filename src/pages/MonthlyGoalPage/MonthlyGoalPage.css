@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Color de fondo general */
+}
+
+h1 {
+    margin: 0; /* Sin margen para los títulos */
+}
+p {
+    margin: 0;
+}
+
+.monthly-goal-page-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+.goal-navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el título horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    background-color:rgb(245, 245, 220); /* Color de fondo */
+    padding: 10px 20px; /* Espaciado */
+    color: #333; /* Color del texto */
+    margin: 0;
+}
+
+.goal-navbar-title {
+    margin: 0; /* Sin margen */
+    font-size: 30px; /* Tamaño de fuente */
+}
+
+.goal-navbar-subtitle {
+    margin: 0;
+    font-size: 20px;
+    color: rgb(126, 155, 155);
+}
+
+/* Media Queries para hacer la navbar responsive */
+@media (max-width: 600px) {
+    .goal-navbar {
+        padding: 10px; /* Ajusta el espaciado en pantallas pequeñas */
+    }
+
+    .goal-navbar-title {
+        font-size: 20px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 400px) {
+    .goal-navbar-title {
+        font-size: 18px;
+    }
+    .goal-navbar-subtitle{
+        font-size: 15px;
+    }
+}

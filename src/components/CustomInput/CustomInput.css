@@ -42,7 +42,7 @@
 
 .input:focus + .underline,
 .input:valid + .underline {
-    width: 80%;
+    width: 100%;
     left: 0;
 }
 

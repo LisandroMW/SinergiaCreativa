@@ -1,23 +1,27 @@
 import "./Commissions.css"
 import CustomInput from "../CustomInput/CustomInput"
-import MonthSelector from "../MonthSelect/MonthSelect"
+import MonthSelect from "../MonthSelect/MonthSelect"
 import ActualCommission from "../ActualCommission/ActualCommission"
+import TicketSelect from "../TicketSelect/TicketSelect"
+import Result from "../Result/Result"
 
 function Commissions(){
     return(
         <div className="commissions">
             <div className="labels-inputs">
                 <CustomInput text="Nombre de Socio/a" id="partner-name" type="text"/>
-                <MonthSelector label="Mes" id="birthMonth" placeholder="Selecciona un mes"/>
+                <MonthSelect label="Mes" id="Month" placeholder="Selecciona un mes"/>
                 <CustomInput text="Mi ticket Promedio en USD" id="average ticket" type="number"/>
                 <CustomInput text="Valor USD (Valor de cambio)" id="USD value" type="number"/> 
-                
             </div>
-            <div className="percentage-container">
+            <div className="actual-commission-container">
                 <ActualCommission/>
             </div>
             <div className="ticket-container">
-                
+                <TicketSelect label= "Ticket de Venta" id="ticket" placeholder="Selecciona un ticket" />
+            </div>
+            <div className="result-container">
+                <Result />
             </div>
                 
         </div>

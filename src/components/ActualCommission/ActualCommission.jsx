@@ -8,6 +8,22 @@ function ActualCommission() {
     setValue(event.target.value);
   };
 
+  const handleTouchStar = (event) => {
+    event.stopPropagation()
+  }
+
+  const handleTouchEnd = (event) => {
+    event.stopPropagation()
+  }
+
+  const handleMouseDown = (event) =>{
+    event.stopPropagation()
+  }
+
+  const handleMouseUp = (event) =>{
+    event.stopPropagation()
+  }
+
   return (
     <div className="range-input">
       <div className="label-container">
@@ -27,6 +43,10 @@ function ActualCommission() {
           value={value}
           step="1"
           onChange={handleChange}
+          onTouchStart={handleTouchStar}
+          onTouchEnd={handleTouchEnd}
+          onMouseDown={handleMouseDown}
+          onMouseUp={handleMouseUp}
         />
       </div>
     </div>

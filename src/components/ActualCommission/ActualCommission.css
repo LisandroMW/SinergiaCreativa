@@ -23,7 +23,7 @@
 .value {
     font-size: 1.2rem;
     color: rgb(23, 73, 75);
-    margin-top: 10px; /* Espacio entre el label y el div "value" */
+    margin-top: 0%; /* Espacio entre el label y el div "value" */
 }
 
 .value-container {
@@ -57,4 +57,12 @@ input[type="range"]::-moz-range-thumb {
     border: 2px solid rgb(23, 73, 75);
     border-radius: 50%;
     cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+    background: rgb(23, 73, 75); /* Color cuando se presiona */
+}
+
+input[type="range"]::-moz-range-thumb:active {
+    background: rgb(23, 73, 75); /* Color cuando se presiona */
 }

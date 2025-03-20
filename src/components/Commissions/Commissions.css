@@ -1,4 +1,13 @@
+.commissions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-top: 0;
+    height: auto;
+    background: linear-gradient(rgb(126, 155, 155), rgb(245, 245, 220))
 
+}
 
 .labels-inputs{
     /*background: linear-gradient(rgb(126, 155, 155), rgb(245, 245, 220));*/
@@ -8,4 +17,36 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.actual-commission-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.ticket-container{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    margin-top: 5%;
+    width: 100%;
+/*    background-color: aqua;*/
+}
+
+.result-container{
+    margin-top: 5%;
+    margin-bottom: 15%;
+    padding: 0px;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid rgb(126, 155, 155);*/
+    
 }

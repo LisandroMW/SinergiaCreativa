@@ -1,0 +1,40 @@
+.net-profit-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 100%; /* Asegúrate de que ocupa el ancho completo disponible */
+    max-width: 400px; /* Limita el ancho máximo si es necesario */
+    background-color: #fff; /* Agrega un fondo blanco para resaltar el contenido */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+.title {
+  
+    background: linear-gradient(rgb(126, 155, 155), rgb(23,73,75));
+    color: rgb(245, 245, 220);
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px; /* Agrega padding para espacio interno */
+    border-radius: 10px 10px 0 0; /* Radio en la parte superior */
+}
+
+.body {
+    color: rgb(25, 73, 75);
+    font-size: 25px;
+    border: 2px solid rgb(25, 73, 75);
+    border-radius: 0 0 10px 10px; /* Radio en la parte inferior */
+    width: 100%;
+    padding: 10px; /* Agrega padding para espacio interno */
+    text-align: center;
+    background: linear-gradient(#fff, rgb(245, 245, 220))
+}
+
+
+@media (max-width: 600px){
+    .net-profit-container {
+        width: 90%;
+    }
+}

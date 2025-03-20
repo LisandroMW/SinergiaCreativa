@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    justify-content: center; /* Centra el título horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    background-color: #333; /* Color de fondo */
+    padding: 10px 20px; /* Espaciado */
+    color: rgb(245, 245, 220); /* Color del texto */
+    margin: 0;
+}
+
+.navbar-title {
+    margin: 0; /* Sin margen */
+    font-size: 24px; /* Tamaño de fuente */
+}
+
+/* Media Queries para hacer la navbar responsive */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 10px; /* Ajusta el espaciado en pantallas pequeñas */
+    }
+
+    .navbar-title {
+        font-size: 20px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+}
