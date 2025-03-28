@@ -3,17 +3,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 16px; /* Espacio entre inputs */
-
-    
+    margin-bottom: 16px; 
 }
 
 .custom-select {
-    width: 50%; /* Ancho del select */
+    width: 50%; 
     height: 35px;
-    background-color: rgb(245, 245, 220);
-    padding: 8px; /* Espaciado interno */
-    border: 1px solid #ccc; /* Borde del select */
-    border-radius: 4px; /* Bordes redondeados */
+    background-color: rgb(240, 248, 255);
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
     outline: none;
 }

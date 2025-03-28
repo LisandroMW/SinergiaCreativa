@@ -1,13 +1,30 @@
-import React from 'react';
-import Slider from "react-slick"
-import CommissionsPage from './pages/CommissionsPage/CommissionsPage'
-import ExamplePage from './pages/ExamplePage/ExamplePage'
+import React, { useState, useRef } from 'react';
+import Slider from "react-slick";
+import CommissionsPage from './pages/CommissionsPage/CommissionsPage';
 import MonthlyGoalPage from './pages/MonthlyGoalPage/MonthlyGoalPage';
-import './App.css'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import './App.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const App = () => {
+    const sliderRef = useRef(null); 
+
+    const handleButtonClickCommission = () => {
+        console.log("Botón clickeado, cambiando al slide 1...");
+        if (sliderRef.current) {
+            sliderRef.current.slickGoTo(1); 
+        }
+    };
+
+    const handleButtonClickMonthlyGoal = () =>{
+        console.log("Botón clickeado, cambiando al slide 2...");
+        if (sliderRef.current) {
+            sliderRef.current.slickGoTo(0);
+    }
+}
+
+
     const settings = {
         dots: true,
         infinite: false,
@@ -15,36 +32,42 @@ const App = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         adaptiveHeight: true,
+        afterChange: (index) => console.log("Slide cambiado a:", index),
         responsive: [
-        {
-            breakpoint: 768, // Para dispositivos de tamaño mediano
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
             },
-        },
-        {
-            breakpoint: 480, // Para dispositivos más pequeños
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
             },
-        },
-    ],
+        ],
     };
 
     return (
-        <div style={{ width: '100%', height: '100vh' }}>
-            <Slider {...settings}>
-                <div>
-                    <CommissionsPage />
-                </div>
-                <div>
-                    <MonthlyGoalPage />
-                </div>
-                
-            </Slider>
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={
+                    <div style={{ width: '100%', height: '100vh' }}>
+                        <Slider ref={sliderRef} {...settings}> 
+                            <div>
+                                <CommissionsPage goToNextSlide={handleButtonClickCommission} />
+                            </div>
+                            <div>
+                                <MonthlyGoalPage goToBackSlide={handleButtonClickMonthlyGoal}/>
+                            </div>
+                        </Slider>
+                    </div>
+                } />
+            </Routes>
+        </BrowserRouter>
     );
 };
 

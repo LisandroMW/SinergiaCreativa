@@ -10,7 +10,6 @@
 }
 
 .labels-inputs{
-    /*background: linear-gradient(rgb(126, 155, 155), rgb(245, 245, 220));*/
     margin-top: 20px;
     width: 100%;
     display: flex;
@@ -34,12 +33,11 @@
     justify-self: center;
     margin-top: 5%;
     width: 100%;
-/*    background-color: aqua;*/
 }
 
 .result-container{
     margin-top: 5%;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
     padding: 0px;
     width: 90%;
     height: 100%;
@@ -47,6 +45,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /*border: 1px solid rgb(126, 155, 155);*/
     
+    
+}
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 10px; 
 }

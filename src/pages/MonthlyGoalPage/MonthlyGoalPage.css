@@ -7,11 +7,11 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Color de fondo general */
+    background-color: #f4f4f4; 
 }
 
 h1 {
-    margin: 0; /* Sin margen para los títulos */
+    margin: 0; 
 }
 p {
     margin: 0;
@@ -21,23 +21,23 @@ p {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    min-width: 100vh;
+    width: 100%;
 }
 
 .goal-navbar {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra el título horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    background-color:rgb(245, 245, 220); /* Color de fondo */
-    padding: 10px 20px; /* Espaciado */
-    color: #333; /* Color del texto */
+    justify-content: center; 
+    align-items: center; 
+    background-color:rgb(245, 245, 220); 
+    padding: 10px 20px; 
+    color: #333; 
     margin: 0;
 }
 
 .goal-navbar-title {
-    margin: 0; /* Sin margen */
-    font-size: 30px; /* Tamaño de fuente */
+    margin: 0; 
+    font-size: 30px; 
 }
 
 .goal-navbar-subtitle {
@@ -46,22 +46,13 @@ p {
     color: rgb(126, 155, 155);
 }
 
-/* Media Queries para hacer la navbar responsive */
 @media (max-width: 600px) {
     .goal-navbar {
-        padding: 10px; /* Ajusta el espaciado en pantallas pequeñas */
+        padding: 10px; 
     }
 
     .goal-navbar-title {
-        font-size: 20px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+        font-size: 20px; 
     }
 }
 
-@media (max-width: 400px) {
-    .goal-navbar-title {
-        font-size: 18px;
-    }
-    .goal-navbar-subtitle{
-        font-size: 15px;
-    }
-}

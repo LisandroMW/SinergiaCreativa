@@ -1,5 +1,5 @@
 .input-container {
-    margin-top: 7px;
+    margin-top: 15px; 
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -9,40 +9,36 @@
 .label {
     display: block;
     width: 90%;
-    margin-bottom: 8px;
-    color: rgb(23, 73, 75);
-    font-size: 14px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 5px; 
+    color: #2c3e50; 
+    font-size: 16px; 
+    font-family: 'Arial', sans-serif; 
     text-align: center;
 }
 
 .input {
     display: block;
-    background-color: beige;
-    color: rgb(23, 73, 75);
+    background-color: #ecf0f1; 
+    color: #2c3e50; 
     width: 100%;
-    height: 30px;
+    height: 40px; 
     text-align: center;
     outline: none;
-    border: none;
+    border: 2px solid transparent; 
+    border-radius: 5px; 
     padding: 5px 0;
-    font-size: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px; 
+    font-family: 'Arial', sans-serif; 
+    transition: border-color 0.3s ease; 
 }
 
-.underline {
-
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background-color: rgb(23, 73, 75);
-    transition: width 0.3s ease, left 0.3s ease;
+.input:focus {
+    border-color: #3498db; 
 }
+
 
 .input:focus + .underline,
 .input:valid + .underline {
     width: 100%;
     left: 0;
 }
-

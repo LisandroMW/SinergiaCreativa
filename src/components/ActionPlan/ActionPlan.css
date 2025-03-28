@@ -1,0 +1,39 @@
+.action-plan {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(240, 248, 255); 
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.action-plan-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.action-plan-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center; 
+    color: #333; 
+}
+
+.action-plan-row {
+    margin: 10px 0;
+    text-align: center; 
+}
+
+.action-plan-label {
+    font-weight: bold;
+    margin-bottom: 5px; 
+    font-family: 'Arial', sans-serif; 
+    color: #333; 
+}
+
+.action-plan-value {
+    font-size: 1.5em; 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    color: rgb(23, 73, 75);
+}

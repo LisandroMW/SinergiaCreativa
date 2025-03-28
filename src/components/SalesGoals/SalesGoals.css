@@ -1,0 +1,48 @@
+.sales-goals {
+    width: 100%;
+    background-color:  rgb(240, 248, 255); 
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.sales-goals-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.sales-goals-row {
+    margin: 10px 0;
+    text-align: center; 
+}
+
+.sales-goals-label {
+    font-weight: bold;
+    margin-bottom: 5px; 
+    font-family: 'Arial', sans-serif; 
+    color: #333; 
+}
+
+.sales-goals-value {
+    font-size: 1.5em; 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    color: rgb(23, 73, 75);
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    .sales-goals-row {
+        margin: 10px 0;
+    }
+
+    .sales-goals-label, .sales-goals-value {
+        width: 100%; 
+    }
+}

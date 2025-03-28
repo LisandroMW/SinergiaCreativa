@@ -1,14 +1,14 @@
-import NavBar from "../../components/NavBar/NavBar"
-import Commissions from "../../components/Commissions/Commissions"
-import "./CommissionsPage.css"
+import NavBar from "../../components/NavBar/NavBar";
+import Commissions from "../../components/Commissions/Commissions";
+import "./CommissionsPage.css";
 
-function CommissionsPage(){
-    return(
+function CommissionsPage({ goToNextSlide }) {
+    return (
         <div className="commissions-page-container">
-            <NavBar text="Asistente de Ventas Mensuales"/>
-            <Commissions/>
+            <NavBar text="Asistente de Ventas Mensuales" />
+            <Commissions goToNextSlide={goToNextSlide} />
         </div>
-    )
+    );
 }
 
-export default CommissionsPage
+export default CommissionsPage;

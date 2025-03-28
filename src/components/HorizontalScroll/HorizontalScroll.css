@@ -1,0 +1,15 @@
+
+.horizontal-scroll {
+  padding: 20px 0; 
+}
+
+.slick-slide {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.slick-list {
+  margin: 0 20px; 
+  overflow: hidden;
+}
